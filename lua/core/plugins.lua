@@ -319,11 +319,6 @@ local astro_plugins = {
     setup = function() astronvim.lazy_load_commands("neovim-session-manager", "SessionManager") end,
     config = function() require "configs.session_manager" end,
   },
-
-  -- Marks - for custom marks
-  ['chentoast/marks.nvim'] = {
-    cmd = "Marks"
-  },
 }
 
 if astronvim.updater.snapshot then

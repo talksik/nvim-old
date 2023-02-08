@@ -11,6 +11,7 @@ vim.keymap.set("n", "<C-n>", "nzzzv")
 vim.keymap.set("n", "<C-p>", "Nzzzv")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "*", "*zz")
 
 -- cycle through current and last buffer
 vim.keymap.set("n", "<leader>b", "<C-^>zz")

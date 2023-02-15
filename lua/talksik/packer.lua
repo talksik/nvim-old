@@ -59,8 +59,6 @@ return require('packer').startup(function(use)
 
     use("nvim-tree/nvim-web-devicons")
 
-    use("folke/trouble.nvim")
-
     use {
         'nvim-lualine/lualine.nvim',
     }

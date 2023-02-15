@@ -31,3 +31,6 @@ vim.opt.colorcolumn = "80"
 
 vim.leader = " "
 
+-- case insensitive searching UNLESS /C or capital in searching
+vim.opt.ignorecase = true
+

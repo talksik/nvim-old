@@ -63,4 +63,6 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
     }
 
+    use("f-person/git-blame.nvim")
+
 end)

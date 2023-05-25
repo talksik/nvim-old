@@ -1,13 +1,9 @@
 local builtin = require('telescope.builtin')
 
 require('telescope').setup {
-    defaults = {
-        preview = false,
-    },
+  defaults = {
+  },
 }
-
--- disable preview in telescope
-vim.g.telescope_previewer_enable = false
 
 vim.keymap.set('n', '<leader>ff', builtin.git_files, {})
 vim.keymap.set('n', '<leader>ww', builtin.live_grep, {})

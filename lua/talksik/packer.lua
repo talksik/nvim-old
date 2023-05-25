@@ -72,6 +72,4 @@ return require('packer').startup(function(use)
         end
     }
 
-    use 'romgrk/barbar.nvim'
-
 end)

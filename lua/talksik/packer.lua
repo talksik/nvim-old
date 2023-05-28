@@ -72,4 +72,7 @@ return require('packer').startup(function(use)
         end
     }
 
+    -- Adds extra functionality over rust analyzer
+    use("simrat39/rust-tools.nvim")
+
 end)

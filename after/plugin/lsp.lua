@@ -63,6 +63,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.skip_server_setup({'rust_analyzer'})
+lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true,

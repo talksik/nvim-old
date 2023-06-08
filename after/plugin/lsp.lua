@@ -30,7 +30,6 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
-
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
@@ -73,14 +72,23 @@ vim.diagnostic.config({
   float = true,
 })
 
--- rust tools
+-- RUST SETUP
 local rt = require("rust-tools")
+
+-- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+require('lspconfig')['rust_analyzer'].setup {
+  capabilities = capabilities
+}
 
 -- Configure LSP through rust-tools.nvim plugin.
 -- rust-tools will configure and enable certain LSP features for us.
 -- See https://github.com/simrat39/rust-tools.nvim#configuration
 rt.setup({
   server = {
+    capabilities = capabilities,
+
     on_attach = function(_, bufnr)
       -- Hover actions
       vim.keymap.set("n", "K", rt.hover_actions.hover_actions, { buffer = bufnr })

@@ -96,7 +96,6 @@ rt.setup({
       vim.keymap.set("n", "<leader>la", rt.code_action_group.code_action_group, { buffer = bufnr })
       vim.keymap.set("n", "<leader>lg", vim.diagnostic.open_float, { buffer = bufnr })
       vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { buffer = bufnr })
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = bufnr })
     end,
 
     settings = {

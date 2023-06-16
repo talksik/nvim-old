@@ -5,7 +5,7 @@ require('telescope').setup {
   },
 }
 
-vim.keymap.set('n', '<leader>ff', builtin.git_files, {})
+vim.keymap.set('n', '<leader>f', builtin.git_files, {})
 vim.keymap.set('n', '<leader>ww', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>sr', builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>ss', builtin.lsp_document_symbols, {})

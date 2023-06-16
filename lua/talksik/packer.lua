@@ -15,14 +15,6 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
-
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('mbbill/undotree')
@@ -75,5 +67,7 @@ return require('packer').startup(function(use)
     -- Adds extra functionality over rust analyzer
     use("simrat39/rust-tools.nvim")
 
-    use("theprimegean/harpoon")
+    use("ThePrimeagen/harpoon")
+
+    use { "catppuccin/nvim", as = "catppuccin" }
 end)

@@ -85,11 +85,6 @@ _G.packer_plugins = {
     path = "/home/talksik-fedora/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/talksik-fedora/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cellular-automaton.nvim"] = {
     loaded = true,
     path = "/home/talksik-fedora/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
@@ -209,6 +204,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/talksik-fedora/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["solarized.nvim"] = {
+    loaded = true,
+    path = "/home/talksik-fedora/.local/share/nvim/site/pack/packer/start/solarized.nvim",
+    url = "https://github.com/shaunsingh/solarized.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

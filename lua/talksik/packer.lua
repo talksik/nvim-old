@@ -69,5 +69,6 @@ return require('packer').startup(function(use)
 
     use("ThePrimeagen/harpoon")
 
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use('shaunsingh/solarized.nvim')
 end)
+

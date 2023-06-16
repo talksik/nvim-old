@@ -1,9 +1,5 @@
-require('catppuccin').setup({
-    flavour = "latte"
-})
-
 function ColorMyPencils(color)
-	color = color or "catppuccin"
+	color = color or "solarized"
 	vim.cmd.colorscheme(color)
 end
 

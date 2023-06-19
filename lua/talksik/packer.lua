@@ -69,6 +69,8 @@ return require('packer').startup(function(use)
 
     use("ThePrimeagen/harpoon")
 
+    -- themes
     use('shaunsingh/solarized.nvim')
+    use('navarasu/onedark.nvim')
 end)
 

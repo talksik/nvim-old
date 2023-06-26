@@ -72,5 +72,15 @@ return require('packer').startup(function(use)
     -- themes
     use('shaunsingh/solarized.nvim')
     use('navarasu/onedark.nvim')
+
+    use({'j-hui/fidget.nvim', tag = 'legacy' })
+
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 end)
 

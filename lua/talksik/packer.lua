@@ -46,8 +46,6 @@ return require('packer').startup(function(use)
     use("github/copilot.vim")
     use("eandrju/cellular-automaton.nvim")
 
-    use("jose-elias-alvarez/null-ls.nvim")
-
     use("nvim-tree/nvim-web-devicons")
 
     use {

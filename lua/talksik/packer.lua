@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd.packadd('packer.nvim')
+vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -71,8 +71,6 @@ return require('packer').startup(function(use)
     use('shaunsingh/solarized.nvim')
     use('navarasu/onedark.nvim')
 
-    use({'j-hui/fidget.nvim', tag = 'legacy' })
-
     use({
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration
@@ -80,5 +78,12 @@ return require('packer').startup(function(use)
             "nvim-lua/plenary.nvim",
         },
     })
+
+    use('nvim-lua/lsp-status.nvim')
+
+    use {
+      "startup-nvim/startup.nvim",
+      requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    }
 end)
 

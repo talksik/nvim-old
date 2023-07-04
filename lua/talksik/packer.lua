@@ -86,7 +86,15 @@ return require('packer').startup(function(use)
       requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
     }
 
-    use('RobertBrunhage/flutter-riverpod-snippets')
-    use('Neevash/awesome-flutter-snippets')
+    -- use('RobertBrunhage/flutter-riverpod-snippets')
+    -- use('Neevash/awesome-flutter-snippets')
+
+    use {
+        'akinsho/flutter-tools.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim', -- optional for vim.ui.select
+        },
+    }
 end)
 

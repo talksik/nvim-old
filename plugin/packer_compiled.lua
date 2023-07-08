@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["awesome-flutter-snippets"] = {
+    loaded = true,
+    path = "/home/talksik/.local/share/nvim/site/pack/packer/start/awesome-flutter-snippets",
+    url = "https://github.com/Neevash/awesome-flutter-snippets"
+  },
   ["cellular-automaton.nvim"] = {
     loaded = true,
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
@@ -129,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/dressing.nvim",
     url = "https://github.com/stevearc/dressing.nvim"
+  },
+  ["flutter-riverpod-snippets"] = {
+    loaded = true,
+    path = "/home/talksik/.local/share/nvim/site/pack/packer/start/flutter-riverpod-snippets",
+    url = "https://github.com/RobertBrunhage/flutter-riverpod-snippets"
   },
   ["flutter-tools.nvim"] = {
     loaded = true,

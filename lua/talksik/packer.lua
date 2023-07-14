@@ -97,6 +97,9 @@ return require('packer').startup(function(use)
         },
     }
 
-    use { 'toppair/peek.nvim', run = 'deno task --quiet build:fast' }
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    })
 end)
 

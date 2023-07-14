@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/talksik/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -219,11 +224,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/talksik/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["peek.nvim"] = {
-    loaded = true,
-    path = "/home/talksik/.local/share/nvim/site/pack/packer/start/peek.nvim",
-    url = "https://github.com/toppair/peek.nvim"
   },
   playground = {
     loaded = true,

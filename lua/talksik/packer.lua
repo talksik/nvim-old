@@ -96,5 +96,7 @@ return require('packer').startup(function(use)
             'stevearc/dressing.nvim', -- optional for vim.ui.select
         },
     }
+
+    use { 'toppair/peek.nvim', run = 'deno task --quiet build:fast' }
 end)
 
